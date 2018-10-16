@@ -39,7 +39,7 @@ router.options('*', async (ctx, next) => {
 
 router.get('/professors', ctx => {
 	console.log('GET /professors');
-	ctx.body = students;
+	ctx.body = professors;
 });
 
 router.post('/professors', ctx => {
