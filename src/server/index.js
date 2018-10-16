@@ -53,6 +53,6 @@ app
 	.use(router.routes())
 	.use(router.allowedMethods());
 
-app.listen(6000, () => console.log('professors server started 6000'));
+app.listen(8001, () => console.log('professors server started 8001'));
 
 export default app;
