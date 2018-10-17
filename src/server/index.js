@@ -21,6 +21,27 @@ const professors = [
 				title: 'Database 1002'
 			}
 		]
+	},
+	{
+		name: 'Dr Grevera',
+		coursesTaught: [
+			{
+				code: 'ML 1002',
+				semester: 0,
+				title: 'Machine Learning 1001'
+			},
+			{
+				code: 'CI 1002',
+				semester: 1,
+				title: 'Computer Imaging 1002'
+			}
+			,
+			{
+				code: 'DS 1002',
+				semester: 1,
+				title: 'Data Structures 1002'
+			}
+		]
 	}
 ];
 
