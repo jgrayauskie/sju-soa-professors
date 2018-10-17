@@ -9,6 +9,7 @@ app.use(bodyparser({ jsonLimit: '7mb' }));
 const professors = [
 	{
 		name: 'Dr Bob',
+		id: 0,
 		coursesTaught: [
 			{
 				code: 'AI 1001',
@@ -24,6 +25,7 @@ const professors = [
 	},
 	{
 		name: 'Dr Grevera',
+		id: 1,
 		coursesTaught: [
 			{
 				code: 'ML 1002',
@@ -61,6 +63,11 @@ router.options('*', async (ctx, next) => {
 router.get('/professors', ctx => {
 	console.log('GET /professors');
 	ctx.body = professors;
+});
+
+router.get('/professors/:professorId', ctx => {
+	console.log('GET /professors/', ctx.params.professorId);
+	ctx.body = professors[ctx.params.professorId];
 });
 
 router.post('/professors', ctx => {
